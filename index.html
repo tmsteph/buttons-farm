@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Button's Farm</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: sans-serif;
-      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
       background-size: cover;
+      background-attachment: scroll; /* mobile-friendly */
       color: #333;
     }
     header {
       background: rgba(76, 175, 80, 0.9);
       color: white;
-      padding: 1.5em;
+      padding: 1.5em 1em;
       text-align: center;
     }
     section {
-      background: rgba(255, 255, 255, 0.9);
-      margin: 2em auto;
-      padding: 2em;
+      background: rgba(255, 255, 255, 0.95);
+      margin: 2em 1em;
+      padding: 1.5em;
       max-width: 800px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+    h1, h2 {
+      margin-top: 0;
+    }
     h2 {
       color: #4CAF50;
+    }
+    ul {
+      padding-left: 1.2em;
     }
     footer {
       text-align: center;
@@ -38,6 +45,12 @@
     }
     a {
       color: #4CAF50;
+    }
+    @media (max-width: 600px) {
+      section {
+        margin: 1em;
+        padding: 1em;
+      }
     }
   </style>
 </head>
